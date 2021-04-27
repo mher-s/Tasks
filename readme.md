@@ -14,3 +14,18 @@ This is my repo's link: ***[Repo](https://github.com/mher-s/bootcamp-repo "I am 
 ## Just for fun
 
 ~~Java~~
+
+## Hobbies
+
+* Sport
+    * Basketball
+    * Football
+    
+* Gameing
+    * CS:GO
+    * Google Dinosaur
+
+* Music
+    * Rap
+    * Jazz
+    * Trash
