@@ -11,6 +11,6 @@
 
 * Tried to use camelCase everywhere and Conventional Commits too
 * all file's and directory's had been created by terminal 
-* 19 commit's
+* 21 commit's
 * git pull, git clone already used.
 * don't read lecture.pdf in classroom. will do it don't worry :)
