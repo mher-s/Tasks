@@ -1,15 +1,5 @@
-// with .
 function randomNum(min, max) {
-  let randomNumber = Math.random() * 10;
+  let randomNumber = Math.round(Math.random() * (max - min) + min);
   console.log(randomNumber);
 }
-
-randomNum(1, 10);
-
-// without .
-function randomNum(min, max) {
-  let randomNumber = Math.floor(Math.random() * 10);
-  console.log(randomNumber);
-}
-
 randomNum(1, 10);
