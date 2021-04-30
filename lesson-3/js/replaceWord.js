@@ -1,12 +1,14 @@
 let arr = ["Houston", "Problem"];
 let sentence = "_, we have a _.";
-let count = [];
+let index = 0;
+let result = "";
 
-for (let i = 0; i < sentence.length; i++) {
-  if (sentence[i] === "_") {
-    count.push(sentence[i]);
-    sentence.replace(count,arr)
+for (let i of sentence) {
+  if (i === "_") {
+    i = arr[index];
+    index++;
   }
+  result += i;
 }
 
-console.log(sentence);
+console.log(result);
