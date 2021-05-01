@@ -8,8 +8,10 @@ let symbols = /[~,!,@,#,$,%,^,&,*,(,),_,+]/g;
 if (
   userInput.match(numbers) &&
   userInput.match(lettersUpper) &&
-  userInput.match(lettersUpper) &&
-  userInput.match(symbols)
+  userInput.match(lettersLower) &&
+  userInput.match(symbols) &&
+  userInput.length > 6 &&
+  userInput.length < 16
 ) {
   console.log("valid");
 } else {
