@@ -28,4 +28,4 @@ console.log(parseInt("I’m the best value - said Infinity.")); // will return N
 console.log(parseFloat("I’m the best value - said Infinity.")); // will return NaN cant find number
 console.log(parseInt("Infinity is the best value!")); // will return NaN cant find number
 console.log(parseFloat("Infinity is the best value!")); // will return infinity
-console.log(parseFloat("12.78ff")); // will return 12.78
+console.log(parseFloat("12.78ff")); // will return 12.7
