@@ -8,3 +8,4 @@ This file is about my Conventional Commit's
 * fix: bug fix 
 * feat: new file
 * doc: documentation wrote
+* style: style changes 
