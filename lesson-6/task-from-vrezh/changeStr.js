@@ -5,4 +5,4 @@ function deleteStr(sentence, str) {
   return sentence;
 }
 
-console.log(deleteStr("alax is akbar", "is"));
+console.log(deleteStr('alax is akbar', 'is'));
