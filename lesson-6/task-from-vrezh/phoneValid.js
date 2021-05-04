@@ -17,12 +17,7 @@ function checkPlus(number) {
   if (isNaN(Number(strToArr.join("")))) {
     return "Bad number";
   }
-  checkLong();
-  return Number(strToArr.join(""));
+  return checkLong(Number(strToArr.join("")))
 }
 
-function finalCheck(number) {
-  return checkPlus(number);
-}
-
-console.log(finalCheck("+1234567890"));
+console.log(checkPlus("+1234567890"));
