@@ -1,6 +1,6 @@
 function checkArrLength(arr) {
   for (let checkInner = 0; checkInner < arr.length; checkInner++) {
-    if (typeof checkInner !== "object") {
+    if (!arr[checkInner]?.length) {
       return "Invalid argument";
     }
   }
@@ -8,8 +8,8 @@ function checkArrLength(arr) {
 }
 
 function checkArrNegative(arr) {
-  count = 0;
-  positiveNumbers = [];
+  let count = 0;
+  let positiveNumbers = [];
   for (let innerArray of arr) {
     for (let innerArrayNum of innerArray) {
       count++;
@@ -25,19 +25,17 @@ function checkArrNegative(arr) {
 }
 
 function logic(arr) {
-  let product = 1;
-  for (let innerArray of arr) {
-    for (let innerArrayNum of innerArray) {
-      if (innerArrayNum < 0 && innerArrayNum > Math.min(...innerArray)) {
-        product *= innerArrayNum;
-      }
-    }
-  }
-  return product;
+  
 }
 
-function resultOutput(arr) {
-  return checkArrLength(arr);
-}
+// function resultOutput(arr) {
+//   return checkArrLength(arr);
+// }
 
-console.log(resultOutput([[1, 2, 3]]));
+console.log(
+  logic([
+    [2, -9, -3, 0],
+    [1, 2],
+    [-4, -11, 0, -5],
+  ])
+);
