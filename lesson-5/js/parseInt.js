@@ -21,4 +21,3 @@ function myParseInt(str) {
 }
 
 console.log(myParseInt("1231"));
-
