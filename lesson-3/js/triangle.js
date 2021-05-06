@@ -3,4 +3,4 @@ function findThirdDegree(firstAngle, secondAngle) {
   console.log(thirdAngle);
 }
 
-findThirdDegree(50,60)
+findThirdDegree(50, 60);
