@@ -5,7 +5,7 @@ function myFind(arr, fn) {
       return element;
     }
   }
-  return thatIndex;
+  return undefined;
 }
 
 console.log(
