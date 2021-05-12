@@ -7,7 +7,7 @@ function myFindIndex(arr, fn) {
       break;
     }
   }
-  return thatIndex;
+  return -1;
 }
 
 console.log(
