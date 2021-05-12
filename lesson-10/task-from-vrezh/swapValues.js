@@ -1,11 +1,7 @@
 let a = 3;
 let b = 6;
 
-let arr = [];
-arr.push(a, b);
+[a,b] = [b,a]
 
-a = arr[1];
-b = arr[0];
-
-console.log(a); //6
-console.log(b); //3
+console.log(a)
+console.log(b)
