@@ -1,10 +1,10 @@
-function myForEach(param, fn) {
-  for (let i = 0; i < param.length; i++) {
-    const element = param[i];
-    fn(element);
+function myForEach(arr, fn) {
+  for (let index = 0; index < arr.length; index++) {
+    const element = arr[index];
+    fn(element, index, arr);
   }
 }
 
-myForEach(["q", "w", "e", "r", "t", "y"], (a) => {
+myForEach(["q", "w", "e", "r", "t", "y"], (a, b) => {
   console.log(a + "s");
 });
