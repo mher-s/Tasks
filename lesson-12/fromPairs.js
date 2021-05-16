@@ -1,6 +1,6 @@
 function fromPairs(arr) {
-    const obj = Object.fromEntries(arr)
-    return obj
+  const obj = Object.fromEntries(arr);
+  return obj;
 }
 
 console.log(
