@@ -3,10 +3,11 @@ function Person(name, age) {
   this.age = age;
   this.stomach = [];
   this.eat = function eat() {
-    if (stomach.length === 10) {
+    if (this.stomach.length === 10) {
       return `Stomach is full`;
     } else {
       this.stomach.push("food");
+      return this.stomach
     }
   };
   this.poop = function poop() {
