@@ -16,7 +16,7 @@ class Author {
     return value;
   }
   toString() {
-    if (this.gender === "male") {
+    if (this.gender.toLowerCase() === "male") {
       return `Mr. ${this._name}`;
     }
     return `Ms. ${this._name}`;
@@ -25,5 +25,32 @@ class Author {
 
 const author = new Author("Valodik", "valodik228@gmail.com", "male");
 
-console.log(author.name);
-console.log(author.name = 'asqanaz');
+// console.log(author.name);
+// console.log((author.name = "asqanaz"));
+
+class Book {
+  constructor(title, author, price, quantity) {
+    this._title = title;
+    this._author = author;
+    this.price = price;
+    this.quantity = quantity;
+  }
+  get nameAndAuthor() {
+    return `${this._author} :: ${this._title}`;
+  }
+  set nameAndAuthor(value) {
+    if (typeof this._author !== "string") {
+      throw new Error("Invalid input");
+    }
+    return (value =  this._author);
+  }
+  getProfit() {
+    return this.price * this.quantity;
+  }
+  toString() {
+    return `${this._author} :: ${this._title}`;
+  }
+}
+
+const newBook = new Book("Jizn", "valodik", 2000, 100);
+
