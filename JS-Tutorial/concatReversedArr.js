@@ -1,7 +1,8 @@
-function concatRev(arr) {
-  const baseArr = [...arr];
-  const reversed = arr.reverse();
-  return baseArr.concat(reversed);
+var a = 0;
+
+function foo(a, b, c = 2) {
+  return ((this.a || 10) + a) / b + c;
 }
 
-console.log(concatRev([1, 2, 3]));
+const bound = foo.bind(this, -4, 3);
+console.log(bound());
