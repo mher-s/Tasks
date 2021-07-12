@@ -1,15 +1,35 @@
-let animal = {
-  jumps: null,
+// let animal = {
+//   jumps: null,
+// };
+// let rabbit = {
+//   __proto__: animal,
+//   jumps: true,
+// };
+
+// alert(rabbit.jumps); // true (1)
+// delete rabbit.jumps;
+
+// alert(rabbit.jumps); // null (2)
+// delete animal.jumps;
+
+// alert(rabbit.jumps); // undefined (3)
+
+let head = {
+  glasses: 1,
 };
-let rabbit = {
-  __proto__: animal,
-  jumps: true,
+
+let table = {
+  pen: 3,
+  __proto__: head,
 };
 
-alert(rabbit.jumps); // true (1)
-delete rabbit.jumps;
+let bed = {
+  sheet: 1,
+  pillow: 2,
+  __proto__: table,
+};
 
-alert(rabbit.jumps); // null (2)
-delete animal.jumps;
-
-alert(rabbit.jumps); // undefined (3)
+let pockets = {
+  money: 2000,
+  __proto__: bed,
+};
